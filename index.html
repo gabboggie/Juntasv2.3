@@ -1,71 +1,60 @@
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Juntas - Nuestra Bitácora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntas</title>
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="https://gabboggie.com/wp-content/uploads/2026/01/psprt_beige.png">
     <link rel="apple-touch-icon" href="https://gabboggie.com/wp-content/uploads/2026/01/psprt_beige.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
     <style>
-        body { 
-            font-family: 'Quicksand', sans-serif; 
-            background-color: #FFFDF7; 
-            color: #1a1a1a; 
-            -webkit-tap-highlight-color: transparent; 
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FFFDF7;
+            color: #000000;
         }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .leaflet-container { 
-            height: 100%; 
-            width: 100%; 
-            border-radius: 2.5rem; 
-            z-index: 1; 
-            border: 4px solid #000; 
-            background: #f8f9fa;
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
         }
-        .stamp-shadow { filter: drop-shadow(6px 6px 0px rgba(0,0,0,0.1)); }
-        
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        
-        .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
-
-        @keyframes pulse-soft {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+        .stamp-shadow {
+            filter: drop-shadow(4px 4px 0px rgba(0,0,0,1));
         }
-        .animate-pulse-soft { animation: pulse-soft 3s infinite ease-in-out; }
+        .leaflet-container {
+            height: 100%;
+            width: 100%;
+            border-radius: 1.5rem;
+            z-index: 1;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
-
-    <script type="importmap">
+<script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@18.2.0",
-    "react-dom": "https://esm.sh/react-dom@18.2.0",
-    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
-    "@google/genai": "https://esm.sh/@google/genai@1.0.2",
-    "firebase/app": "https://esm.sh/firebase@10.8.0/app",
-    "firebase/firestore": "https://esm.sh/firebase@10.8.0/firestore",
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "firebase/": "https://esm.sh/firebase@^12.8.0/",
-    "react/": "https://esm.sh/react@^19.2.4/"
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
+    "firebase/": "https://esm.sh/firebase@^12.8.0/"
   }
 }
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-<body>
+<body class="overflow-x-hidden">
     <div id="root"></div>
 <script type="module" src="/index.tsx"></script>
 </body>
