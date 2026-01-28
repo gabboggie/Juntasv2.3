@@ -1,8 +1,0 @@
-{
-  "name": "Juntas_2.3",
-  "description": "Una bitácora privada para nosotras. Coleccionando momentos un sello a la vez.",
-  "requestFramePermissions": [
-    "geolocation",
-    "camera"
-  ]
-}
