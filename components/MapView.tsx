@@ -1,7 +1,6 @@
-
 import React, { useEffect, useRef } from 'react';
-import { Experience } from '../types';
-import { TYPE_CONFIG } from '../constants';
+import { Experience } from '../types.ts';
+import { TYPE_CONFIG } from '../constants.tsx';
 
 // Declare L as a global from the script tag in index.html
 declare const L: any;

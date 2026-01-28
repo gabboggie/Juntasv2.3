@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
-import { Experience } from '../types';
-import { Stamp } from './Stamp';
+import { Experience } from '../types.ts';
+import { Stamp } from './Stamp.tsx';
 
 interface CalendarViewProps {
   experiences: Experience[];

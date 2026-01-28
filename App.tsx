@@ -1,14 +1,13 @@
-
 import React, { useState, useEffect } from 'react';
-import { User, Experience, ViewType, ExperienceType } from './types';
-import { Navigation } from './components/Navigation';
-import { ExperienceCard } from './components/ExperienceCard';
-import { MapView } from './components/MapView';
-import { CalendarView } from './components/CalendarView';
-import { Stamp } from './components/Stamp';
-import { TYPE_CONFIG } from './constants';
-import { getGeocodingFromGemini, suggestEmotionalNote } from './services/geminiService';
-import { subscribeToMemories, saveMemoryToCloud } from './services/firebaseService';
+import { User, Experience, ViewType, ExperienceType } from './types.ts';
+import { Navigation } from './components/Navigation.tsx';
+import { ExperienceCard } from './components/ExperienceCard.tsx';
+import { MapView } from './components/MapView.tsx';
+import { CalendarView } from './components/CalendarView.tsx';
+import { Stamp } from './components/Stamp.tsx';
+import { TYPE_CONFIG } from './constants.tsx';
+import { getGeocodingFromGemini, suggestEmotionalNote } from './services/geminiService.ts';
+import { subscribeToMemories, saveMemoryToCloud } from './services/firebaseService.ts';
 
 const LOGO_URL = 'https://gabboggie.com/wp-content/uploads/2026/01/psprt_beige.png';
 

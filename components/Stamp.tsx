@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
-import { ExperienceType } from '../types';
-import { TYPE_CONFIG } from '../constants';
+import { ExperienceType } from '../types.ts';
+import { TYPE_CONFIG } from '../constants.tsx';
 
 interface StampProps {
   type: ExperienceType;

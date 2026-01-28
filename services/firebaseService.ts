@@ -1,7 +1,6 @@
-
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, deleteDoc, doc } from 'firebase/firestore';
-import { Experience } from '../types';
+import { Experience } from '../types.ts';
 
 // NOTA: Para que esto funcione, debes reemplazar estos valores con los de tu proyecto en Firebase Console
 // Si no los tienes, la app seguirá funcionando en modo local (fallthrough).

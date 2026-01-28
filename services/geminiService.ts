@@ -1,4 +1,3 @@
-
 import { GoogleGenAI, Type } from "@google/genai";
 
 // Inicialización estándar siguiendo las mejores prácticas de seguridad

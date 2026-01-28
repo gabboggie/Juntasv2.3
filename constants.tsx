@@ -1,5 +1,4 @@
-
-import { ExperienceType } from './types';
+import { ExperienceType } from './types.ts';
 
 export const COLORS = {
   Brown: '#8B4513',
